@@ -1,0 +1,64 @@
+# 基本は github.com のレポジトリーを指定するだけ
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# 特定の条件で読み込みたいとき
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+if   = '''! has('nvim')'''
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if   = '''! has('nvim')'''
+
+# 半透明
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+# スペニット
+[[plugins]]
+repo = 'Shougo/neocomplete'
+[[plugins]]
+repo = 'Shougo/neosnippet'
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+[[plugins]]
+repo = 'honza/vim-snippets'
+[[plugins]]
+repo = 'gisphm/vim-gitignore'
+
+[[plugins]]
+repo = 'vim-scripts/delphi.vim'
+
+# End補完
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+
+[[plugins]]
+repo = 'gko/vim-coloresque'
+
+[[plugins]]
+repo = 'thinca/vim-ref'
+
+# solarixed - colorscheme -
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+# 依存関係を指定したいとき
+# Airline 
+[[plugins]]
+repo    = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+
+# 依存関係を指定したからと言って、自動でインストールはされない（ここは NeoBundle と違う）
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+
+
